@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package com.luv2code.json.demo;
+
+/**
+ * @author mutsubra0
+ *
+ */
+public class Driver {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

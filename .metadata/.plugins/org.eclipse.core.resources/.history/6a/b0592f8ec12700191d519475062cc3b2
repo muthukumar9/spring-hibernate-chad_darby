@@ -1,0 +1,73 @@
+/**
+ * 
+ */
+package com.luv2code.springdemo.aspect;
+
+import java.util.logging.Logger;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.stereotype.Component;
+
+
+/**
+ * @author mutsubra0
+ *
+ */
+@Aspect
+@Component
+public class CRMLoggingAspect {
+
+	//setup logger
+	private Logger myLogger = Logger.getLogger(getClass().getName());
+	
+	/**
+	 * setup pointcut declarations
+	 * 1. match on ANY Class in the package
+	 * 2. match on any number of arguments
+	 * 3. match on any METHOD in the class
+	 */
+	@Pointcut("execution(* com.luv2code.springdemo.controller.*.*(..))")
+	private void forControllerPackage() { }
+	
+	//do for service and dao package
+	@Pointcut("execution(* com.luv2code.springdemo.service.*.*(..))")
+	private void forServicePackage() { }
+	
+	@Pointcut("execution(* com.luv2code.springdemo.dao.*.*(..))")
+	private void forDaoPackage() { }
+	
+	//combine all of the above @PointCut declarations
+	@Pointcut("forControllerPackage() || forServicePackage() || forDaoPackage()")
+	private void forAppFlow() { }
+	
+	//add @Before advice
+	@Before("forAppFlow()")
+	public void before(JoinPoint theJoinPoint) {
+		
+		//display method we are calling
+		String theMethod = theJoinPoint.getSignature().toShortString();
+		myLogger.info("====> in @Before: calling method: " + theMethod);
+		
+		//display the arguments to the method
+		//get the arguments
+		Object[] args = theJoinPoint.getArgs();
+		
+		//loop through and display arguments
+		for (Object tempArg : args) {
+			myLogger.info("====> argument: " + tempArg);
+		}
+	}
+	
+	//add @AfterReturning advice
+	@AfterReturning(
+			pointcut="forAppFlow()",
+			returning="theResult"
+			)
+	public void afterReturning(JoinPoint theJoinPoint, Object theResult) {
+		
+	}
+}

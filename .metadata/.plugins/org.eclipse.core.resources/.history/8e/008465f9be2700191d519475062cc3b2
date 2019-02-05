@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package com.luv2code.springdemo.aspect;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Component;
+
+/**
+ * @author mutsubra0
+ *
+ */
+@Aspect
+@Component
+public class CRMLoggingAspect {
+
+	//setup logger
+	private
+	
+	//setup pointcut declarations
+	
+	//add @Before advice
+	
+	//add @AfterReturning advice
+}

@@ -1,0 +1,17 @@
+127.0.0.1 - - [05/Feb/2019:00:02:45 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [05/Feb/2019:00:02:51 +0530] "GET /spring-crm-rest/ HTTP/1.1" 200 68
+0:0:0:0:0:0:0:1 - - [05/Feb/2019:00:06:57 +0530] "GET /spring-crm-rest/api/customers HTTP/1.1" 200 389
+0:0:0:0:0:0:0:1 - - [05/Feb/2019:00:07:08 +0530] "GET /spring-crm-rest/api/customer HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [05/Feb/2019:00:07:19 +0530] "GET /spring-crm-rest/api/customers HTTP/1.1" 200 389
+0:0:0:0:0:0:0:1 - - [05/Feb/2019:00:08:55 +0530] "GET /spring-crm-rest/ HTTP/1.1" 200 131
+0:0:0:0:0:0:0:1 - - [05/Feb/2019:00:08:59 +0530] "GET /spring-crm-rest/api/customers HTTP/1.1" 200 389
+0:0:0:0:0:0:0:1 - - [05/Feb/2019:00:09:04 +0530] "GET /spring-crm-rest/ HTTP/1.1" 200 131
+0:0:0:0:0:0:0:1 - - [05/Feb/2019:00:10:59 +0530] "GET /spring-crm-rest/api/customers/1 HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [05/Feb/2019:00:11:07 +0530] "GET /spring-crm-rest/api/customers/1 HTTP/1.1" 404 1047
+127.0.0.1 - - [05/Feb/2019:00:12:10 +0530] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [05/Feb/2019:00:12:41 +0530] "GET /spring-crm-rest/api/customers/1 HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [05/Feb/2019:00:13:48 +0530] "GET /spring-crm-rest/api/customers/1 HTTP/1.1" 500 4444
+0:0:0:0:0:0:0:1 - - [05/Feb/2019:00:14:48 +0530] "GET /spring-crm-rest/api/customers/1 HTTP/1.1" 500 1138
+0:0:0:0:0:0:0:1 - - [05/Feb/2019:00:15:41 +0530] "GET /spring-crm-rest/api/customers/4 HTTP/1.1" 500 1138
+0:0:0:0:0:0:0:1 - - [05/Feb/2019:00:15:44 +0530] "GET /spring-crm-rest/api/customers/4 HTTP/1.1" 500 1138
+0:0:0:0:0:0:0:1 - - [05/Feb/2019:00:15:58 +0530] "GET /spring-crm-rest/api/customers/4 HTTP/1.1" 500 1138

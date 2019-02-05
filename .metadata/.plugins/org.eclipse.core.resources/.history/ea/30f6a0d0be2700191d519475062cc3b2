@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.luv2code.springdemo.aspect;
+
+/**
+ * @author mutsubra0
+ *
+ */
+public class CRMLoggingAspect {
+
+}

@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package com.luv2code.hibernate.demo;
+
+/**
+ * @author mutsubra0
+ *
+ */
+public class CreateStudentDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+package com.luv2code.springdemo.rest;
+
+@RestController
+public class StudentRestController {
+
+}

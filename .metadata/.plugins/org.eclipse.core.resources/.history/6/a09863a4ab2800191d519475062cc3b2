@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.luv2code.springdemo.rest;
+
+/**
+ * @author mutsubra0
+ *
+ */
+public class CustomerRestController {
+
+}

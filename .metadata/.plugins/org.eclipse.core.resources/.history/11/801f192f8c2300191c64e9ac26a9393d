@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package com.luv2code.jdbc;
+
+/**
+ * @author mutsubra0
+ *
+ */
+public class TestJdbc {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		//test jdbc connection
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

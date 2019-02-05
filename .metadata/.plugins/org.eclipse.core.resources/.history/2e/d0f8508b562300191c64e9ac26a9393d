@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package com.luv2code.json.demo;
+
+/**
+ * @author mutsubra0
+ *
+ */
+public class Address {
+
+	private String street;
+	private String city;
+	private String state;
+	private String zip;
+	private String country;
+	
+	public Address() {
+		
+	}
+}

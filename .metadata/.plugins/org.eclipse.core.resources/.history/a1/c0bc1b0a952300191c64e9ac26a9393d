@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package com.luv2code.hibernate.demo;
+
+import javax.security.auth.login.Configuration;
+
+import org.hibernate.SessionFactory;
+
+/**
+ * @author mutsubra0
+ *
+ */
+public class CreateStudentDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		SessionFactory factory = new Configuration()
+									.
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+package com.luv2code.hibernate.demo;
+
+public class DateUtils {
+
+	private static SimpleDateFormatter formatter = new SimpleDateFormatter("dd/MM/yyyy");
+}
